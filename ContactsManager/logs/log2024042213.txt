@@ -1,0 +1,381 @@
+2024-04-22 13:10:29.212 +05:30 [INF] User profile is available. Using 'C:\Users\yeshw\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 13:10:30.452 +05:30 [INF] Now listening on: http://localhost:5253
+2024-04-22 13:10:36.273 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/ - -
+2024-04-22 13:10:37.761 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-22 13:10:38.346 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-22 13:10:38.629 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-22 13:10:38.680 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5253/Account/Login?ReturnUrl=%2F
+2024-04-22 13:10:38.690 +05:30 [INF] HTTP GET / responded 302 in 1073.1084 ms
+2024-04-22 13:10:38.847 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/ - - - 302 0 - 2582.9171ms
+2024-04-22 13:10:39.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2F - -
+2024-04-22 13:10:39.120 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 13:10:39.162 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:40.239 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:10:43.103 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:43.110 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:43.202 +05:30 [INF] Executing ViewResult, running view Login.
+2024-04-22 13:10:44.499 +05:30 [INF] Executed ViewResult - view Login executed in 1342.5515ms.
+2024-04-22 13:10:44.510 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 4255.2785ms
+2024-04-22 13:10:44.513 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:44.516 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:40:44 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-04-22 13:10:44.519 +05:30 [INF] HTTP GET /Account/Login responded 200 in 5398.5096 ms
+2024-04-22 13:10:44.537 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 5461.5087ms
+2024-04-22 13:10:44.803 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:10:44.925 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 122.2133ms
+2024-04-22 13:10:44.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 13:10:45.479 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 495.9261ms
+2024-04-22 13:10:54.450 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Persons/Index - -
+2024-04-22 13:10:54.465 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 13:10:54.489 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-22 13:10:54.493 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-22 13:10:54.494 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5253/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2024-04-22 13:10:54.495 +05:30 [INF] HTTP GET /Persons/Index responded 302 in 30.4695 ms
+2024-04-22 13:10:54.498 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Persons/Index - - - 302 0 - 47.9048ms
+2024-04-22 13:10:54.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FPersons%2FIndex - -
+2024-04-22 13:10:54.509 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 13:10:54.513 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:54.516 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:10:54.561 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:54.575 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:54.577 +05:30 [INF] Executing ViewResult, running view Login.
+2024-04-22 13:10:54.585 +05:30 [INF] Executed ViewResult - view Login executed in 7.5377ms.
+2024-04-22 13:10:54.587 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 66.0753ms
+2024-04-22 13:10:54.589 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:54.592 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:40:54 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-04-22 13:10:54.594 +05:30 [INF] HTTP GET /Account/Login responded 200 in 84.9467 ms
+2024-04-22 13:10:54.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FPersons%2FIndex - - - 200 - text/html;+charset=utf-8 93.0643ms
+2024-04-22 13:10:54.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 13:10:54.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:10:54.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.3731ms
+2024-04-22 13:10:54.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.5559ms
+2024-04-22 13:10:56.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Countries/UploadFromExcel - -
+2024-04-22 13:10:56.963 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Countries/UploadFromExcel
+2024-04-22 13:10:56.966 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-22 13:10:56.968 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-04-22 13:10:56.969 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5253/Account/Login?ReturnUrl=%2FCountries%2FUploadFromExcel
+2024-04-22 13:10:56.971 +05:30 [INF] HTTP GET /Countries/UploadFromExcel responded 302 in 7.7311 ms
+2024-04-22 13:10:56.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Countries/UploadFromExcel - - - 302 0 - 15.2690ms
+2024-04-22 13:10:56.980 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FCountries%2FUploadFromExcel - -
+2024-04-22 13:10:56.985 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 13:10:56.988 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:56.990 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:10:57.035 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:57.039 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:10:57.043 +05:30 [INF] Executing ViewResult, running view Login.
+2024-04-22 13:10:57.048 +05:30 [INF] Executed ViewResult - view Login executed in 5.0838ms.
+2024-04-22 13:10:57.051 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 54.8661ms
+2024-04-22 13:10:57.055 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:10:57.059 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:40:56 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-04-22 13:10:57.062 +05:30 [INF] HTTP GET /Account/Login responded 200 in 76.6232 ms
+2024-04-22 13:10:57.066 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FCountries%2FUploadFromExcel - - - 200 - text/html;+charset=utf-8 86.5167ms
+2024-04-22 13:10:57.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 13:10:57.198 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9079ms
+2024-04-22 13:10:57.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:10:57.220 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.8707ms
+2024-04-22 13:11:01.896 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Register - -
+2024-04-22 13:11:01.904 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2024-04-22 13:11:01.909 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager)'
+2024-04-22 13:11:01.917 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:11:01.924 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:01.928 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:01.933 +05:30 [INF] Executing ViewResult, running view Register.
+2024-04-22 13:11:03.093 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Register (ContactsManager) in 1169.2575ms
+2024-04-22 13:11:03.101 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager)'
+2024-04-22 13:11:03.104 +05:30 [ERR] HTTP GET /Account/Register responded 500 in 1200.5727 ms
+System.ArgumentException: The property ContactsManager.Core.DTO.RegisterDTO.Passwoed could not be found. (Parameter 'propertyName')
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProviderExtensions.GetMetadataForProperty(IModelMetadataProvider provider, Type containerType, String propertyName)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.CompareAttributeWrapper.GetOtherPropertyDisplayName(ModelValidationContextBase validationContext, CompareAttribute attribute)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GeneratePassword(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.<ExecuteAsync>b__31_1() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 59
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.ExecuteAsync() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-04-22 13:11:03.903 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The property ContactsManager.Core.DTO.RegisterDTO.Passwoed could not be found. (Parameter 'propertyName')
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProviderExtensions.GetMetadataForProperty(IModelMetadataProvider provider, Type containerType, String propertyName)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.CompareAttributeWrapper.GetOtherPropertyDisplayName(ModelValidationContextBase validationContext, CompareAttribute attribute)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GeneratePassword(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.<ExecuteAsync>b__31_1() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 59
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.ExecuteAsync() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-04-22 13:11:05.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Register - - - 500 - text/html;+charset=utf-8 4059.4797ms
+2024-04-22 13:11:05.990 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 13:11:05.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:11:05.998 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.4255ms
+2024-04-22 13:11:06.007 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.9545ms
+2024-04-22 13:11:08.281 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FCountries%2FUploadFromExcel - -
+2024-04-22 13:11:08.292 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 13:11:08.298 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:11:08.304 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:11:08.315 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:08.319 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:08.323 +05:30 [INF] Executing ViewResult, running view Login.
+2024-04-22 13:11:08.332 +05:30 [INF] Executed ViewResult - view Login executed in 8.5401ms.
+2024-04-22 13:11:08.337 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 22.8292ms
+2024-04-22 13:11:08.342 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 13:11:08.348 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:41:07 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-04-22 13:11:08.352 +05:30 [INF] HTTP GET /Account/Login responded 200 in 60.2102 ms
+2024-04-22 13:11:08.357 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Login?ReturnUrl=%2FCountries%2FUploadFromExcel - - - 200 - text/html;+charset=utf-8 76.1197ms
+2024-04-22 13:11:08.386 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:11:08.392 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.8180ms
+2024-04-22 13:11:12.291 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Register - -
+2024-04-22 13:11:12.301 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2024-04-22 13:11:12.307 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager)'
+2024-04-22 13:11:12.312 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 13:11:12.322 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:12.326 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 13:11:12.328 +05:30 [INF] Executing ViewResult, running view Register.
+2024-04-22 13:11:12.598 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Register (ContactsManager) in 276.2821ms
+2024-04-22 13:11:12.602 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager)'
+2024-04-22 13:11:12.609 +05:30 [ERR] HTTP GET /Account/Register responded 500 in 308.8888 ms
+System.ArgumentException: The property ContactsManager.Core.DTO.RegisterDTO.Passwoed could not be found. (Parameter 'propertyName')
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProviderExtensions.GetMetadataForProperty(IModelMetadataProvider provider, Type containerType, String propertyName)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.CompareAttributeWrapper.GetOtherPropertyDisplayName(ModelValidationContextBase validationContext, CompareAttribute attribute)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GeneratePassword(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.<ExecuteAsync>b__31_1() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 59
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.ExecuteAsync() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-04-22 13:11:12.686 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The property ContactsManager.Core.DTO.RegisterDTO.Passwoed could not be found. (Parameter 'propertyName')
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadataProviderExtensions.GetMetadataForProperty(IModelMetadataProvider provider, Type containerType, String propertyName)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.CompareAttributeWrapper.GetOtherPropertyDisplayName(ModelValidationContextBase validationContext, CompareAttribute attribute)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.CompareAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GeneratePassword(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.<ExecuteAsync>b__31_1() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 59
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Account_Register.ExecuteAsync() in C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\Views\Account\Register.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-04-22 13:11:12.900 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Register - - - 500 - text/html;+charset=utf-8 608.8331ms
+2024-04-22 13:11:12.934 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 13:11:12.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 13:11:12.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.6097ms
+2024-04-22 13:11:12.961 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.8440ms

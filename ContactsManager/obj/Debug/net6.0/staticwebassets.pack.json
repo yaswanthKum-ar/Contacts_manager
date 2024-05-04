@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ContactsManager.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ContactsManager.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\StyleSheet.css"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\error.svg",
+      "PackagePath": "staticwebassets\\error.svg"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yeshw\\source\\repos\\ContactsManagerSolution\\ContactsManager\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ContactsManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ContactsManager.props",
+      "PackagePath": "build\\ContactsManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ContactsManager.props",
+      "PackagePath": "buildMultiTargeting\\ContactsManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ContactsManager.props",
+      "PackagePath": "buildTransitive\\ContactsManager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

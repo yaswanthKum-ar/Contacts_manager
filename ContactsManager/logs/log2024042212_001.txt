@@ -1,0 +1,264 @@
+2024-04-22 12:22:17.939 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 12:22:18.313 +05:30 [INF] Hosting environment: Development
+2024-04-22 12:22:18.316 +05:30 [INF] Content root path: C:\Users\yeshw\source\repos\ContactsManagerSolution\ContactsManager\
+2024-04-22 12:58:25.703 +05:30 [INF] User profile is available. Using 'C:\Users\yeshw\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 12:58:26.704 +05:30 [INF] Now listening on: http://localhost:5253
+2024-04-22 12:58:32.481 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/ - -
+2024-04-22 12:58:34.141 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-04-22 12:58:34.670 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:58:35.754 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager).
+2024-04-22 12:58:37.419 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:37.420 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:37.421 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:37.424 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 12:58:37.431 +05:30 [INF] Index action method of PersonsController
+2024-04-22 12:58:37.442 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-04-22 12:58:37.447 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-04-22 12:58:40.651 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-04-22 12:58:55.583 +05:30 [INF] Executed DbCommand (211ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-22 12:58:56.149 +05:30 [INF] Time for Filtered Persons from Database completed in 18701.3 ms
+2024-04-22 12:58:56.324 +05:30 [INF] GetSortedPersons of PersonsService
+2024-04-22 12:58:56.412 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 12:58:56.713 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:56.732 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:56.734 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:58:56.743 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 12:58:56.811 +05:30 [INF] Executing ViewResult, running view Index.
+2024-04-22 12:58:58.056 +05:30 [INF] Executed ViewResult - view Index executed in 1288.909ms.
+2024-04-22 12:58:58.112 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 12:58:58.120 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager) in 22352.0119ms
+2024-04-22 12:58:58.124 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:58:58.135 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:28:57 GMT
+Server: Kestrel
+Last-Modified: 2024-04-22 12:58
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-22 12:58:58.145 +05:30 [INF] HTTP GET / responded 200 in 24171.7908 ms
+2024-04-22 12:58:58.179 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/ - - - 200 - text/html;+charset=utf-8 25770.0154ms
+2024-04-22 12:59:00.112 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 12:59:00.167 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 55.0559ms
+2024-04-22 12:59:01.743 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 12:59:03.156 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1413.2227ms
+2024-04-22 12:59:09.719 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Login - -
+2024-04-22 12:59:09.732 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 12:59:09.742 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 12:59:09.749 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 12:59:09.952 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:09.955 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:09.959 +05:30 [INF] Executing ViewResult, running view Login.
+2024-04-22 12:59:10.438 +05:30 [INF] Executed ViewResult - view Login executed in 480.7748ms.
+2024-04-22 12:59:10.442 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 684.2416ms
+2024-04-22 12:59:10.446 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 12:59:10.449 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:29:09 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-04-22 12:59:10.452 +05:30 [INF] HTTP GET /Account/Login responded 200 in 720.2942 ms
+2024-04-22 12:59:10.459 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Login - - - 200 - text/html;+charset=utf-8 740.2103ms
+2024-04-22 12:59:11.288 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 12:59:11.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 12:59:11.293 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.5534ms
+2024-04-22 12:59:11.320 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.8718ms
+2024-04-22 12:59:13.878 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/jquery.validate.unobtrusive.min.js - -
+2024-04-22 12:59:13.882 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2024-04-22 12:59:14.023 +05:30 [INF] The file /jquery.validate.unobtrusive.min.js was not modified
+2024-04-22 12:59:14.030 +05:30 [INF] Response:
+StatusCode: 304
+Content-Type: application/javascript
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sun, 21 Apr 2024 04:53:12 GMT
+2024-04-22 12:59:14.035 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 304 in 153.8382 ms
+2024-04-22 12:59:14.041 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/jquery.validate.unobtrusive.min.js - - - 304 - application/javascript 162.6885ms
+2024-04-22 12:59:20.284 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5253/Account/Login application/x-www-form-urlencoded 224
+2024-04-22 12:59:20.292 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2024-04-22 12:59:20.329 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 12:59:20.360 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ContactsManager.Core.DTO.LoginDTO) on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 12:59:20.617 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:20.814 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-04-22 12:59:22.424 +05:30 [INF] Executed DbCommand (1,364ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-22 12:59:23.031 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-04-22 12:59:23.117 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-04-22 12:59:23.211 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-04-22 12:59:23.256 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.260 +05:30 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-22 12:59:23.265 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager) in 2893.4238ms
+2024-04-22 12:59:23.268 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager)'
+2024-04-22 12:59:23.273 +05:30 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+2024-04-22 12:59:23.277 +05:30 [INF] HTTP POST /Account/Login responded 302 in 2984.9383 ms
+2024-04-22 12:59:23.283 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5253/Account/Login application/x-www-form-urlencoded 224 - 302 0 - 2998.7192ms
+2024-04-22 12:59:23.427 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Persons/Index - -
+2024-04-22 12:59:23.434 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 12:59:23.469 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:59:23.486 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager).
+2024-04-22 12:59:23.492 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.502 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.504 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.506 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 12:59:23.508 +05:30 [INF] Index action method of PersonsController
+2024-04-22 12:59:23.510 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-04-22 12:59:23.512 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-04-22 12:59:23.615 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-04-22 12:59:23.635 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-22 12:59:23.642 +05:30 [INF] Time for Filtered Persons from Database completed in 130.9 ms
+2024-04-22 12:59:23.646 +05:30 [INF] GetSortedPersons of PersonsService
+2024-04-22 12:59:23.649 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 12:59:23.652 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.656 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.658 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:23.660 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 12:59:23.663 +05:30 [INF] Executing ViewResult, running view Index.
+2024-04-22 12:59:23.672 +05:30 [INF] Executed ViewResult - view Index executed in 9.3715ms.
+2024-04-22 12:59:23.675 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 12:59:23.678 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager) in 188.5134ms
+2024-04-22 12:59:23.679 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:59:23.681 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:29:22 GMT
+Server: Kestrel
+Last-Modified: 2024-04-22 12:59
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-22 12:59:23.684 +05:30 [INF] HTTP GET /Persons/Index responded 200 in 250.1337 ms
+2024-04-22 12:59:23.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Persons/Index - - - 200 - text/html;+charset=utf-8 259.6237ms
+2024-04-22 12:59:23.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 12:59:23.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 12:59:23.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 2.6586ms
+2024-04-22 12:59:23.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.1946ms
+2024-04-22 12:59:28.460 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Account/Logout - -
+2024-04-22 12:59:28.473 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Logout
+2024-04-22 12:59:28.481 +05:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager)'
+2024-04-22 12:59:28.496 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager).
+2024-04-22 12:59:28.508 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.523 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-04-22 12:59:28.529 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2024-04-22 12:59:28.531 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-04-22 12:59:28.534 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.538 +05:30 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2024-04-22 12:59:28.540 +05:30 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager) in 36.7652ms
+2024-04-22 12:59:28.542 +05:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager)'
+2024-04-22 12:59:28.545 +05:30 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+2024-04-22 12:59:28.547 +05:30 [INF] HTTP GET /Account/Logout responded 302 in 74.1715 ms
+2024-04-22 12:59:28.552 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Account/Logout - - - 302 0 - 92.4917ms
+2024-04-22 12:59:28.558 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/Persons/Index - -
+2024-04-22 12:59:28.563 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2024-04-22 12:59:28.571 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:59:28.574 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager).
+2024-04-22 12:59:28.595 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.597 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.601 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.606 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-04-22 12:59:28.613 +05:30 [INF] Index action method of PersonsController
+2024-04-22 12:59:28.616 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-04-22 12:59:28.619 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-04-22 12:59:28.624 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-04-22 12:59:28.640 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-04-22 12:59:28.649 +05:30 [INF] Time for Filtered Persons from Database completed in 29.7 ms
+2024-04-22 12:59:28.654 +05:30 [INF] GetSortedPersons of PersonsService
+2024-04-22 12:59:28.657 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-04-22 12:59:28.660 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.662 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.665 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-04-22 12:59:28.669 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-04-22 12:59:28.674 +05:30 [INF] Executing ViewResult, running view Index.
+2024-04-22 12:59:28.686 +05:30 [INF] Executed ViewResult - view Index executed in 13.0647ms.
+2024-04-22 12:59:28.693 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-04-22 12:59:28.700 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager) in 121.407ms
+2024-04-22 12:59:28.707 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager)'
+2024-04-22 12:59:28.714 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 22 Apr 2024 07:29:27 GMT
+Server: Kestrel
+Last-Modified: 2024-04-22 12:59
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-04-22 12:59:28.719 +05:30 [INF] HTTP GET /Persons/Index responded 200 in 155.7509 ms
+2024-04-22 12:59:28.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/Persons/Index - - - 200 - text/html;+charset=utf-8 165.3916ms
+2024-04-22 12:59:28.747 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_vs/browserLink - -
+2024-04-22 12:59:28.766 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.4640ms
+2024-04-22 12:59:28.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 12:59:28.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5253/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 2.4455ms
